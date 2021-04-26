@@ -5,7 +5,7 @@ def db_init():
         CREATE TABLE Kindergarten(
             kg_code CHAR(2) NOT NULL PRIMARY KEY,
             name VARCHAR(10) NOT NULL,
-            region VARCHAR(5) NOT NULL
+            region CHAR(5) NOT NULL
     );
     '''
     curs.execute(sql)
