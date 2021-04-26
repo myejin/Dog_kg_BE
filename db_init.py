@@ -2,7 +2,7 @@ import pymysql
 
 def db_init():
     sql = '''
-        CREATE TABLE Kindergarden(
+        CREATE TABLE Kindergarten(
             kg_code CHAR(2) NOT NULL PRIMARY KEY,
             name VARCHAR(10) NOT NULL,
             region VARCHAR(5) NOT NULL
