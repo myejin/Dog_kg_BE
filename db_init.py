@@ -18,7 +18,7 @@ def db_init():
             u_pw VARCHAR(15) NOT NULL,
             u_name VARCHAR(10) NOT NULL,
             u_kg CHAR(2) NOT NULL,
-            FOREIGN KEY(u_kg) REFERENCES Kindergarden(kg_code)
+            FOREIGN KEY(u_kg) REFERENCES Kindergarten(kg_code)
     );
     '''
     curs.execute(sql)
@@ -33,7 +33,7 @@ def db_init():
             d_kg CHAR(2) NOT NULL,
             d_coach INT(8) NOT NULL,
             FOREIGN KEY(d_user) REFERENCES User(u_code),
-            FOREIGN KEY(d_kg) REFERENCES Kindergarden(kg_code),
+            FOREIGN KEY(d_kg) REFERENCES Kindergarten(kg_code),
             FOREIGN KEY(d_coach) REFERENCES User(u_code)
     );
     '''
@@ -48,7 +48,7 @@ def db_init():
             b_writer INT(8) NOT NULL,
             b_kg CHAR(2) NOT NULL,
             FOREIGN KEY(b_writer) REFERENCES User(u_code),
-            FOREIGN KEY(b_kg) REFERENCES Kindergarden(kg_code),
+            FOREIGN KEY(b_kg) REFERENCES Kindergarten(kg_code),
             PRIMARY KEY(b_num, b_kg)
     );
     '''
@@ -74,7 +74,7 @@ def db_init():
             CONTENT VARCHAR(100),
             m_kg CHAR(2) NOT NULL,
             m_writer INT(8) NOT NULL,
-            FOREIGN KEY(m_kg) REFERENCES Kindergarden(kg_code),
+            FOREIGN KEY(m_kg) REFERENCES Kindergarten(kg_code),
             FOREIGN KEY(m_writer) REFERENCES User(u_code),
             PRIMARY KEY(m_date, m_time, m_kg)
     );
