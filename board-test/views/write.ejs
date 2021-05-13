@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>게시판 새 글 작성</title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+</head>
+<body>
+    <h1>게시판 새 글 작성</h1>
+    <form action = '/board/write' method = 'POST'>
+	<table border='1'>
+	    <tr>
+		<td>제목</td>
+		<td><input name = 'title' type = 'text' required/></td>
+	    </tr>
+	    <tr>
+		<td>내용</td>
+		<td><textarea name="content" cols="30" rows="10" required></textarea></td>
+	    </tr>
+	    <tr>
+		<td colspan='2'><button type='submit'>발행</button></td>
+	    </tr>
+	</table>
+    </form>
+</body>
+</html>
