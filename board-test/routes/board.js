@@ -110,4 +110,5 @@ board.post('/delete', async (req, res) => {
     }
 });
 
+
 module.exports = board;
