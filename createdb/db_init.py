@@ -87,3 +87,4 @@ if __name__ == '__main__':
     db_init()
     conn.commit()
     conn.close()
+    

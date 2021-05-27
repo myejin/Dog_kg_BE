@@ -18,3 +18,4 @@ if __name__ == '__main__':
     curs = conn.cursor()
     all_table_columns()
     conn.close() 
+    
