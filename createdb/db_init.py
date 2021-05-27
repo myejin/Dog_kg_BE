@@ -12,8 +12,7 @@ def db_init():
     
     sql = '''
         CREATE TABLE User(
-            u_code INT(8) NOT NULL PRIMARY KEY,
-            u_cat CHAR(1) NOT NULL,
+            u_code CHAR(9) NOT NULL PRIMARY KEY,
             u_id VARCHAR(15) NOT NULL,
             u_pw VARCHAR(15) NOT NULL,
             u_name VARCHAR(10) NOT NULL,
@@ -25,13 +24,13 @@ def db_init():
 
     sql = '''
         CREATE TABLE Dog(
-            d_code INT(9) NOT NULL PRIMARY KEY,
+            d_code CHAR(9) NOT NULL PRIMARY KEY,
             d_name VARCHAR(10),
             birth DATE,
             other VARCHAR(20),
-            d_user INT(8) NOT NULL,
+            d_user CHAR(9) NOT NULL,
             d_kg CHAR(2) NOT NULL,
-            d_coach INT(8) NOT NULL,
+            d_coach CHAR(9) NOT NULL,
             FOREIGN KEY(d_user) REFERENCES User(u_code),
             FOREIGN KEY(d_kg) REFERENCES Kindergarten(kg_code),
             FOREIGN KEY(d_coach) REFERENCES User(u_code)
@@ -45,7 +44,7 @@ def db_init():
             b_cat CHAR(1) NOT NULL,
             b_title VARCHAR(20) NOT NULL,
             content VARCHAR(100),
-            b_writer INT(8) NOT NULL,
+            b_writer CHAR(9) NOT NULL,
             b_kg CHAR(2) NOT NULL,
             FOREIGN KEY(b_writer) REFERENCES User(u_code),
             FOREIGN KEY(b_kg) REFERENCES Kindergarten(kg_code),
@@ -58,8 +57,8 @@ def db_init():
         CREATE TABLE Diary(
             di_num INT NOT NULL,
             content VARCHAR(100),
-            di_dog INT(9) NOT NULL,
-            di_writer INT(8) NOT NULL,
+            di_dog CHAR(9) NOT NULL,
+            di_writer CHAR(9) NOT NULL,
             FOREIGN KEY(di_dog) REFERENCES Dog(d_code),
             FOREIGN KEY(di_writer) REFERENCES User(u_code),
             PRIMARY KEY(di_num, di_dog)
@@ -73,7 +72,7 @@ def db_init():
             m_time CHAR(1) NOT NULL,
             CONTENT VARCHAR(100),
             m_kg CHAR(2) NOT NULL,
-            m_writer INT(8) NOT NULL,
+            m_writer CHAR(9) NOT NULL,
             FOREIGN KEY(m_kg) REFERENCES Kindergarten(kg_code),
             FOREIGN KEY(m_writer) REFERENCES User(u_code),
             PRIMARY KEY(m_date, m_time, m_kg)
