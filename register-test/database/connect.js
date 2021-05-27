@@ -1,7 +1,7 @@
 var db = require('mariadb');
 
 var pool = db.createPool({
-    host:'',
+    host:'3.34.132.41',
     user: 'root',
     password: 'root',
     database: 'dog_kg',
