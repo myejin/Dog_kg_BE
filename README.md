@@ -27,3 +27,6 @@
    $ python3 db_init.py
    $ python3 meta_print.py
    ```
+
+## register-test 
+참조 : https://blog.naver.com/rlagpwlsq789
