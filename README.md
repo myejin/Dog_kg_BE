@@ -1,4 +1,4 @@
-## Create DB 
+# Create DB 
 
 ### 1. Installing modules
    ```bash
@@ -28,5 +28,7 @@
    $ python3 meta_print.py
    ```
 
-## register-test 
-참조 : https://blog.naver.com/rlagpwlsq789
+# register-test 
+참조 : https://blog.naver.com/rlagpwlsq789/222340095052
+
+# board-test 
