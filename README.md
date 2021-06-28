@@ -1,11 +1,13 @@
-# Create DB 
+# createdb 
 
-### 1. Installing modules
+### :grinning: How to Run
+
+   - Install modules used
    ```bash
    $ /bin/bash settings.sh
    ```
 
-### 2. Setting User/Password for remote connection to DB
+   - Set User/Password for remote connection to DB
    ```bash
    (in DB)
    > CREATE DATABASE dog_kg;
@@ -22,7 +24,7 @@
    $ sudo service mysql restart
    ```
 
-### 3. Creating Tables
+   - Create Tables and Check schema
    ```bash
    $ python3 db_init.py
    $ python3 meta_print.py
