@@ -7,7 +7,7 @@
    $ /bin/bash settings.sh
    ```
 
-   - Set User/Password for remote connection to DB
+   - Set User/Password for __remote connection__ to DB
    ```bash
    (in DB)
    > CREATE DATABASE dog_kg;
@@ -31,6 +31,7 @@
    ```
 
 # register-test 
-참조 : https://blog.naver.com/rlagpwlsq789/222340095052
+UI test :point_right: https://blog.naver.com/rlagpwlsq789/222340095052
 
 # board-test 
+:pushpin: 
