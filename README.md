@@ -31,7 +31,7 @@
    ```
 
 # register-test 
-UI test :point_right: https://blog.naver.com/rlagpwlsq789/222340095052
+UI test :point_right: 
 
 # board-test 
 :pushpin: 
